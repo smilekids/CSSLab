@@ -118,14 +118,6 @@ db.collection("contact").onSnapshot(doc => {
         firstCell.textContent = 'Name: '+item.data().name;
         secondCell.textContent = 'Gender: '+Gen;
         thirdCell.textContent = 'Email: '+email;
-        // secondCell.textContent = 'A';
-        // switch(item.data().grade){
-        //     case 4 : secondCell.textContent = 'A';break;
-        //     case 3 : secondCell.textContent = 'B';break;
-        //     case 2 : secondCell.textContent = 'C';break;
-        //     case 1 : secondCell.textContent = 'D';break;
-        //     case 0 : secondCell.textContent = 'F';break;
-        // }
     });
     sumfemale.textContent ='Female: '+ ((female/count)*100).toFixed(2)+'%';
     summale.textContent ='Male: '+ ((male/count)*100).toFixed(2)+'%';
